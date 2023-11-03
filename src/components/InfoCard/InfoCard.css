@@ -1,0 +1,15 @@
+.info-card {
+    background-color: #FFFDF7;
+    width: 50%;
+    border-radius: 15px;
+    padding: 14px;
+    box-sizing: border-box;
+    margin: 48px auto 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .info-card {
+        width: 90%;
+    }
+}

@@ -1,0 +1,50 @@
+.banner {
+    color: #ffffff;
+    padding: 24px;
+    min-height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner > h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.banner > p {
+    text-align: center;
+}
+
+.search-container {
+    width: 50%;
+}
+
+.button-container {
+    width: 160px;
+}
+
+.error-text {
+    color: #ff5f7c;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 12px;
+    }
+
+    .banner > h1 {
+        font-size: 3rem;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .button-container {
+        width: 100%;
+    }
+}

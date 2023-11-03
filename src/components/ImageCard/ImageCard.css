@@ -1,0 +1,51 @@
+.image-card {
+    position: relative;
+
+    width: 400px;
+    height: 512px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .2s;
+}
+
+.image-card:hover > img {
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.image-card:hover .image-overlay {
+    opacity: 1;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.3) 60%,
+            rgba(0, 0, 0, 0) 100%
+    );
+}
+
+.image-prompt {
+    padding: 8px;
+    color: #ffffff;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}

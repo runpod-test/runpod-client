@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Architecture
+I added two approaches for handling client-server communication and state.
+1. Using Redux and Redux Thunk for state management. This is the more traditional approach and is more suitable for larger applications. I have only added  a skeleton for this approach in `/src/modules`. I didn't include the reducers and actions since they are not needed to demonstrate the approach.
+2. Using React Query for state management. This is a more modern approach and is more suitable for smaller applications. I have implemented this approach in the project (see `/src/views/HomePage.js).
+
+Given the small and simple nature of this assignment, I have used react-query to handle client-server communication and state management. I have also used react-query's built-in caching to avoid unnecessary API calls.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
